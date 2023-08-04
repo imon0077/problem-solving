@@ -33,7 +33,7 @@ int main(){
         //cout << "\n A[i] : " << A[i] << endl;
         cout << "\n A[i] A["<< i << "] : " << A[i] << endl;
         cout << "\n A[i-1] A["<< i-1 << "] : " << A[i-1] << endl;
-        cout << "\n A[i+1] A["<< i+1 << "] : " << A[+1] << endl;
+        cout << "\n A[i+1] A["<< i+1 << "] : " << A[i+1] << endl;
         
         // if( (2 > 2) || (2 < 2) )
         //     flag = 0
