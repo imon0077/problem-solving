@@ -17,7 +17,7 @@ int main() {
                 cin >> arr1[i][j];
             }
         }  
-
+  
 
         // int xCount = 0, dotCount = 0;
         // for (i = 0; i < 3; i++) {
