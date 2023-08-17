@@ -4,7 +4,7 @@ using namespace std;
 
 unordered_map<int, long long> memo;
 
-long long calculateF(int n) {
+long long calculateF(long long n) {
     if (n == 0) {
         return 1;
     }
@@ -19,7 +19,7 @@ long long calculateF(int n) {
 }
 
 int main() {
-    int N;
+    long long N;
     cin >> N;
 
     cout << "f(" << N << ") = " << calculateF(N) << endl;
