@@ -38,13 +38,40 @@ int main() {
     cin >> N;
     
     for (int game = 1; game <= N; ++game) {
-        vector<string> board(3);
-        for (int i = 0; i < 3; ++i) {
-            cin >> board[i];
-        }
+        //vector<string> board(3);
+        // for (int i = 0; i < 3; ++i) {
+        //     cin >> board[i];
+        // }
         
-        string winner = determineWinner(board);
-        cout << "Game " << game << ": " << winner << endl;
+        //string winner = determineWinner(board);
+        //cout << "Game " << game << ": " << winner << endl;
+
+
+        //vector<vector<int>> board = { { 0, 4, 0 }, { 0, 4, 0 }, { 0, 0, 4 } };
+        vector<vector<string>> board;
+
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                //cout << i << " " << j << " " << endl;
+                cin >> board[i][j];
+            }
+            cout << endl;
+        }
+
+
+        // for (int i = 0; i < 3; ++i) {
+        //     for (int j = 0; j < 3; ++j) {
+        //         cout << board[i][j] << " ";
+        //     }
+        //     cout << endl;
+        // }
+
+/*
+.X.
+.X.
+..X
+*/
+
     }
     
     return 0;
@@ -160,5 +187,61 @@ int main() {
     return 0;
 }
 
+
+*/
+
+
+
+// Codemama
+/*
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+// Function to determine the winner of a game
+string determineWinner(vector<string>& board) {
+    int xCount = 0, dotCount = 0;
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if (board[i][j] == 'X') {
+                xCount++;
+            } else if (board[i][j] == '.') {
+                dotCount++;
+            }
+        }
+    }
+
+    // If there is an odd number of Xs, Alice wins
+    if (xCount % 2 == 1) {
+        return "Alice";
+    }
+
+    // If there are no empty cells, Bob wins
+    if (dotCount == 0) {
+        return "Bob";
+    }
+
+    // Otherwise, Alice will always make a move to ensure that the board
+    // doesn't have three consecutive Xs, putting Bob in a losing position.
+    return "Bob";
+}
+
+int main() {
+    int N;
+    cin >> N;
+
+    for (int game = 1; game <= N; ++game) {
+        vector<string> board(3);
+        for (int i = 0; i < 3; ++i) {
+            cin >> board[i];
+        }
+
+        string winner = determineWinner(board);
+        cout << "Game " << game << ": " << winner << endl;
+    }
+
+    return 0;
+}
 
 */
