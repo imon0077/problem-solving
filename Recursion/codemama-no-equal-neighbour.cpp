@@ -9,9 +9,6 @@ void generateStrings(int n, string current) {
     }
 
     generateStrings(n, current + 'a');
-    //generateStrings(n, current + 'b');
-    //generateStrings(n, current + 'c');
-    
     if (current.empty() || current.back() != 'b') {
         generateStrings(n, current + 'b');
     }
