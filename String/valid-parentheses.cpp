@@ -17,7 +17,7 @@ bool isValid(string s){
         else if((s[i] == ')' && stk.top() != '(') || (s[i] == '}' && stk.top() != '{') || (s[i] == ']' && stk.top() != '[') ){
             return false;
         }
-        else{
+        else{   
             stk.pop();
         }        
     }
