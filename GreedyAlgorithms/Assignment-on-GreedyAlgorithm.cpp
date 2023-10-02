@@ -33,3 +33,6 @@ int main() {
 
     return 0;
 }
+
+//Time complexity of the solution is O(N log N)
+//Space complexity is O(N) to store the intervals
