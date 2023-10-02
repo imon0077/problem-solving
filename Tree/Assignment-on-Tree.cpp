@@ -50,6 +50,8 @@ int main() {
              2      7
             / \    / \
            1   3  5   7
+          / \
+         3   2 
     */
 
     Solution solution;
